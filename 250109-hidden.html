@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가시성 속성과 디스플레이 속성 비교하기</title>
+    <style>
+        .v1{
+            visibility: visible;
+            border: 1px dotted red;
+        }
+        .v2{
+            visibility: hidden;
+            border: 1px dotted red;
+        }
+        .v3{
+            display: visible;
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <div class="v1"><!-- 보이지 않도록 설정: 공간 있음-->
+        <img src="img/pic1.jpg">
+    </div>
+    <div class="v2">
+        <img src="img/pic2.jpg">
+    </div>
+    <div class="v3"><!--보이지 않도록 설정: 공간 삭제-->
+        <img src="img/img1.jpg">
+    </div>
+</body>
+</html>
